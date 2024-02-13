@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.container {
+  width: 600px;
+  height: 450px;
+  background: #fff;
+  border-radius: 12px;
+  border-bottom-right-radius: 150px;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin: 8px 0;
+  color: hsl(0, 1%, 44%);
+}
+
+input {
+  height: 60px;
+  max-width: 120px;
+  padding: 8px;
+  border: 1px solid hsl(0, 0%, 86%);
+  color: hsl(0, 0%, 8%);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+::placeholder {
+  color: hsl(0, 1%, 44%);
+}
+
+h2 {
+  font-size: 4.2rem;
+  color: hsl(0, 0%, 8%);
+  font-weight: 800;
+  line-height: 1.2;
+}
+span {
+  letter-spacing: 10px;
+  color: hsl(259, 100%, 65%);
+  font-size: 100px;
+  line-height: 0;
+}
+
+.numbers {
+  font-size: 70px;
+  letter-spacing: 0;
+}
+
+.rel {
+  position: relative;
+  height: 2px;
+  background-color: hsl(0, 0%, 94%);
+  margin: 25px 0;
+}
+
+button {
+  position: absolute;
+  right: -15px;
+  width: 50px;
+  top: -25px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  border: none;
+  background-color: hsl(259, 100%, 65%);
+}
+
+.required {
+  font-size: 11px;
+  color: crimson;
+  display: none;
+}
+
+.show {
+  display: block;
+}

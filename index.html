@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="day">
+          <label for="day" class="day">DAYS</label>
+          <input type="number" id="day" placeholder="DD" value="05" />
+          <i class="required">this field is required</i>
+          <i class="invalid required">must be a valid day </i>
+        </div>
+
+        <div class="month">
+          <label for="month" class="month">MONTHS</label>
+          <input type="number" id="month" placeholder="MM" value="11" />
+          <i class="required">this field is required</i>
+          <i class="invalid required">must be a valid month </i>
+        </div>
+
+        <div class="year">
+          <label for="year" class="year">YEARS</label>
+          <input type="number" id="year" placeholder="YYYY" value="2004" />
+          <i class="required">this field is required</i>
+          <i class="invalid required">must be in the pasts</i>
+        </div>
+      </form>
+      <div class="rel">
+        <button class="btn">|</button>
+      </div>
+
+      <h2><span class="year">&hyphen;&hyphen;</span>years</h2>
+      <h2><span class="month">&hyphen;&hyphen;</span>months</h2>
+      <h2><span class="day">&hyphen;&hyphen;</span>days</h2>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Derrick</a>.
+    </div>
+
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>
